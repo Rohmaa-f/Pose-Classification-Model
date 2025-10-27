@@ -35,6 +35,7 @@ This notebook showcases:
 Images are stored in folders named after their class labels:
 
 data/anndataset/archive
+
 ├── pose_name_1/
 ├── pose_name_2/
 └── ...
@@ -55,7 +56,6 @@ Random horizontal/vertical flips, rotations, zooms, and shifts are applied to im
   Dense(256, activation='relu')
   Dropout(0.2)
   Dense(43, activation='softmax')
-  '''
 - **Optimizer:** Adam (learning rate = 1e-5)
 - **Loss:** Categorical cross-entropy
 - **Metrics:** Accuracy
@@ -87,4 +87,4 @@ Results include:
 ## Results Summary
 
 Exact metrics may vary depending on dataset composition and training epochs.
-The notebook prints detailed per-class performance via classification_report() and demonstrates qualitative performance using randomly selected test samples.
+The notebook prints detailed per-class performance via `classification_report()` and demonstrates qualitative performance using randomly selected test samples.
