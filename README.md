@@ -1,7 +1,7 @@
 # Pose Classification Using Fine-Tuned MobileNetV3
 
 This project implements a **human pose classification model** using **transfer learning** with a **fine-tuned MobileNetV3-Large** backbone.  
-It was developed as part of an Artificial Neural Networks course and demonstrates a full deep-learning workflow: data preprocessing, model design, fine-tuning, training, and evaluation.
+It demonstrates a full deep-learning workflow: data preprocessing, model design, fine-tuning, training, and evaluation.
 
 ---
 
@@ -102,3 +102,29 @@ Exact metrics may vary depending on dataset composition and training epochs.
 The notebook prints detailed per-class performance via `classification_report()` and demonstrates qualitative performance using randomly selected test samples.
 
 ---
+
+## How to Run the Project
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/Rohmaa-f/Pose-Classification-Model.git
+   ```
+2. **Navigate to the project directory**
+   ```bash
+   cd Pose-Classification-Model
+   ```
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Prepare the dataset**
+
+   - Place your images in data/anndataset/archive/<class_name>/
+   - Each folder name should correspond to a pose class label.
+   
+5. **Open the Jupyter notebook**
+    ```bash
+   jupyter notebook Pose_Classification_Model_Using_MobileNet_v3.ipynb
+   ```
+6. **Run all cells sequentially**
+
