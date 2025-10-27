@@ -32,14 +32,26 @@ This notebook showcases:
 ## Methodology
 
 ### **1. Data Preparation**
-Images are stored in folders named after their class labels:
+Images are stored in folders named after their class labels inside the dataset directory:
 
-data/anndataset/archive
+```
+data/
+└── anndataset/
+    └── archive/
+        ├── pose_name_1/
+        │   ├── img_001.jpg
+        │   ├── img_002.jpg
+        │   └── ...
+        ├── pose_name_2/
+        │   ├── img_101.jpg
+        │   ├── img_102.jpg
+        │   └── ...
+        └── pose_name_3/
+            ├── img_201.jpg
+            └── ...
+```
 
-├── pose_name_1/
-├── pose_name_2/
-└── ...
-
+Each subfolder under `archive/` represents one **pose class**.  
 A Pandas DataFrame is created containing image filepaths and corresponding labels.  
 The dataset is split into **training, validation, and test sets** using `ImageDataGenerator` with an 80/20 train-test split and 20% validation subset.
 
@@ -88,3 +100,5 @@ Results include:
 
 Exact metrics may vary depending on dataset composition and training epochs.
 The notebook prints detailed per-class performance via `classification_report()` and demonstrates qualitative performance using randomly selected test samples.
+
+---
