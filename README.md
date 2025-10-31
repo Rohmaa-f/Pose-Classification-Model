@@ -91,7 +91,6 @@ Results include:
 
 - **Accuracy and F1-scores per class**
 - **Classification report**
-- **Confusion matrix visualization** (optional)
 - **Sample predictions** with correct/incorrect labels color-coded.
 
 ---
